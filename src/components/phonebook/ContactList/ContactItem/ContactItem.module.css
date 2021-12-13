@@ -1,0 +1,32 @@
+.li {
+    border: 1px solid black;
+    background-color: #c4ed64;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.btn { 
+    margin-left: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    padding: 3px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transition-property: background-color, transform;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  background-color: #008cff;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  transform: scale(1.2);
+}
