@@ -37,12 +37,12 @@ class Phonebook extends Component {
       id: uniqid.time(),
       ...data,
     };
-    this.haveContact(data)
-      ? alert(`${data.name} is already in contacts.`)
-      : this.setState((prevState) => ({
-
-          contacts: [contact, ...prevState.contacts],
-        }));
+    if(this.haveContact(data)){
+      return alert(`${data.name} is already in contacts.`)
+      }
+    this.setState((prevState) => ({
+      contacts: [contact, ...prevState.contacts],
+      }));
   };
 
   haveContact = (data) => {
